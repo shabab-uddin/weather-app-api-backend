@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Check current weather conditions for cities around the world.">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <p class="eyebrow">YOUR WEATHER COMPANION</p>
+      <h1>Weather App</h1>
+      <p class="subtitle">A little forecast for wherever you are.</p>
+    </header>
+
+    <form id="weather-form" class="search-form">
+      <label for="city-input">Search for a city</label>
+      <div class="search-row">
+        <input
+          id="city-input"
+          type="text"
+          placeholder="e.g. Bareilly"
+          autocomplete="off"
+          maxlength="100"
+          required
+        >
+        <button type="submit">Search</button>
+      </div>
+    </form>
+
+    <p id="status" class="status" role="status" aria-live="polite">
+      Search for a city to see its weather.
+    </p>
+
+    <section id="weather-card" class="weather-card" hidden>
+      <div class="location">
+        <div>
+          <p class="eyebrow">CURRENT WEATHER</p>
+          <h2 id="city-name">City</h2>
+        </div>
+        <img id="weather-icon" alt="" width="90" height="90">
+      </div>
+
+      <p id="description" class="description"></p>
+      <p class="temperature"><span id="temperature">--</span><span>°C</span></p>
+      <p id="feels-like" class="feels-like"></p>
+
+      <div class="details">
+        <div class="detail">
+          <span>Humidity</span>
+          <strong id="humidity">--%</strong>
+        </div>
+        <div class="detail">
+          <span>Wind speed</span>
+          <strong id="wind-speed">-- m/s</strong>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Weather data provided by OpenWeather.</p>
+    </footer>
+  </main>
+</body>
+</html>
