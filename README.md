@@ -32,7 +32,6 @@ A weather application built with HTML, CSS, JavaScript, Node.js, Express.js, and
 
 `OPENWEATHER_API_KEY` — your personal OpenWeather API key.
 
-Never publish your `.env` file or secret API key.
 
 ## Deployment
 
@@ -40,5 +39,4 @@ The application can be deployed as a Node.js web service. Configure the API key 
 
 ## Author
 
-Your Name
 shababuddin
